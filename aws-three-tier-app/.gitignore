@@ -1,20 +1,17 @@
-# Local .terraform directories
-**/.terraform/*
+# Ignore AWS CLI installer
+awscliv2.zip
 
-# .tfstate files
+# Terraform state files
 *.tfstate
-*.tfstate.*
+*.tfstate.backup
 
 # Crash logs
-crash.log
-crash.*.log
+*.log
 
-# Exclude override files as they are usually local only
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# OS files
+.DS_Store
+Thumbs.db
 
-# Exclude CLI configuration files
-.terraformrc
-terraform.rc
+# Python / Node / other build artifacts (if any)
+__pycache__/
+node_modules/
